@@ -25,5 +25,7 @@ WebApp
 Как запустить
 
 pip install -r requirements.txt 
+в строке   api_key = 'Ваш_api'  # Пожалуйста, замените YOUR_API_KEY на реальный ключ API
+замените на реальный api ключ
 Запустите приложение python main.py
 Далее test.py
