@@ -18,7 +18,7 @@ class User:
         conn.close()
 
 def fetch_weather(city):
-    api_key = '661ebedb04a615ee09c54592b4b2a55c'  # Пожалуйста, замените YOUR_API_KEY на реальный ключ API
+    api_key = 'Ваш_api'  # Пожалуйста, замените YOUR_API_KEY на реальный ключ API
     url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
     response = requests.get(url)
     data = response.json()
