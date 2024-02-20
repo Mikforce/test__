@@ -43,7 +43,7 @@ def get_user_balance(user_id):
     return balance
 
 @app.route('/update_balance', methods=['POST'])
-@cache.memoize(timeout=60)  # Cache the result of this function for 60 seconds
+@cache.memoize(timeout=60)  # Декоратор @cache.memoize(timeout=60) применяется к функции update_balance, кэшируя возвращаемое значение на 60 секунд.Последующие вызовы update_balance с теми же входными параметрами в течение 60 секунд вернут кэшированный результат вместо его повторного вычисления.
 def update_balance():
     user_id = request.json.get('userId')
     city = request.json.get('city')

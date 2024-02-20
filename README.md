@@ -29,3 +29,4 @@ pip install -r requirements.txt
 замените на реальный api ключ
 Запустите приложение python main.py
 Далее test.py
+ab -n 1000 -c 100 http://127.0.0.1:5000/update_balance
